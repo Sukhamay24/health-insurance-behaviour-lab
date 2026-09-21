@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Health Insurance Articles | Health Insurance Behaviour Lab</title>
+
+<meta name="description" content="Practical health insurance articles covering claims, policy limits, cashless treatment and out-of-pocket costs.">
+
+<style>
+:root{
+  --navy:#123f5d;
+  --navy2:#0d3047;
+  --ink:#17324a;
+  --muted:#5c6d79;
+  --light:#f4f8fa;
+  --line:#dbe5eb;
+  --white:#fff;
+  --accent:#eaf3f8;
+  --max:1080px;
+}
+
+*{box-sizing:border-box}
+
+html{scroll-behavior:smooth}
+
+body{
+  margin:0;
+  font-family:Arial,Helvetica,sans-serif;
+  color:var(--ink);
+  background:var(--white);
+  line-height:1.7;
+}
+
+.container{
+  max-width:var(--max);
+  margin:auto;
+  padding:0 28px;
+}
+
+header{
+  background:#fff;
+  border-bottom:1px solid var(--line);
+}
+
+.nav{
+  min-height:72px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:25px;
+}
+
+.brand{
+  color:var(--navy);
+  font-size:20px;
+  font-weight:700;
+  text-decoration:none;
+}
+
+nav{
+  display:flex;
+  flex-wrap:wrap;
+  gap:20px;
+}
+
+nav a{
+  color:var(--ink);
+  text-decoration:none;
+  font-size:14px;
+}
+
+nav a:hover{
+  color:var(--navy);
+}
+
+.hero{
+  background:var(--accent);
+  padding:75px 0;
+}
+
+.badge{
+  display:inline-block;
+  background:#dcecf5;
+  color:var(--navy);
+  padding:7px 13px;
+  border-radius:20px;
+  font-size:12px;
+  font-weight:700;
+  letter-spacing:.4px;
+}
+
+h1{
+  font-size:52px;
+  line-height:1.12;
+  margin:28px 0 18px;
+  color:var(--navy2);
+  max-width:850px;
+}
+
+.lead{
+  font-size:19px;
+  color:#315b78;
+  max-width:780px;
+}
+
+section{
+  padding:60px 0;
+}
+
+h2{
+  font-size:32px;
+  color:var(--navy);
+  margin-top:0;
+}
+
+.intro{
+  max-width:800px;
+  color:var(--muted);
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:24px;
+  margin-top:35px;
+}
+
+.card{
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:28px;
+  background:#fff;
+}
+
+.card h3{
+  margin-top:0;
+  font-size:22px;
+  line-height:1.35;
+  color:var(--navy);
+}
+
+.card p{
+  color:var(--muted);
+}
+
+.card a{
+  display:inline-block;
+  margin-top:10px;
+  color:#17618a;
+  font-weight:700;
+  text-decoration:none;
+}
+
+.card a:hover{
+  text-decoration:underline;
+}
+
+.note{
+  background:var(--light);
+  border-left:4px solid var(--navy);
+  padding:22px 25px;
+  margin-top:40px;
+}
+
+footer{
+  background:var(--navy2);
+  color:#dce8ef;
+  padding:40px 0;
+  margin-top:20px;
+}
+
+footer a{
+  color:#fff;
+  text-decoration:none;
+}
+
+.footer-links{
+  display:flex;
+  flex-wrap:wrap;
+  gap:18px;
+  margin:15px 0;
+}
+
+.small{
+  font-size:13px;
+  color:#b9cbd6;
+}
+
+@media(max-width:700px){
+  .nav{
+    flex-direction:column;
+    align-items:flex-start;
+    padding:18px 0;
+  }
+
+  nav{
+    gap:12px;
+  }
+
+  h1{
+    font-size:38px;
+  }
+
+  .grid{
+    grid-template-columns:1fr;
+  }
+
+  section{
+    padding:45px 0;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="container nav">
+    <a class="brand" href="index.html">Health Insurance Behaviour Lab</a>
+
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="claims.html">Claims</a>
+      <a href="policy.html">Policy &amp; Limits</a>
+      <a href="costs.html">Out-of-Pocket Costs</a>
+      <a href="articles.html">Articles</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section class="hero">
+  <div class="container">
+    <span class="badge">HEALTH INSURANCE ARTICLES</span>
+
+    <h1>Practical Health Insurance Insights</h1>
+
+    <p class="lead">
+      Real-world articles explaining what can happen between a health insurance
+      policy, a hospital bill and the final amount paid by the patient.
+    </p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+
+    <h2>Featured Articles</h2>
+
+    <p class="intro">
+      These articles focus on practical health insurance behaviour —
+      especially claims, cashless treatment, policy limits and
+      out-of-pocket costs.
+    </p>
+
+    <div class="grid">
+
+      <article class="card">
+        <h3>Cashless Approved — Yet ₹1.76 Lakh Paid From Pocket</h3>
+        <p>
+          A cashless approval does not always mean that the entire hospital
+          bill will be paid by the insurer. This real-world example explains
+          how a significant amount can still remain payable by the patient.
+        </p>
+        <a href="https://medium.com/" target="_blank" rel="noopener">
+          Read the article
+        </a>
+      </article>
+
+      <article class="card">
+        <h3>₹6.84 Lakh Hospital Bill — ₹2.18 Lakh Still Unpaid</h3>
+        <p>
+          A large approved hospital claim can still leave substantial
+          out-of-pocket expenses. This article looks at the practical reasons
+          behind the difference.
+        </p>
+        <a href="https://medium.com/" target="_blank" rel="noopener">
+          Read the article
+        </a>
+      </article>
+
+      <article class="card">
+        <h3>The Claim Was Approved. The Family Still Couldn’t Leave the Hospital.</h3>
+        <p>
+          Claim approval and final settlement are not always the same thing.
+          This article explains how unpaid amounts can affect a patient's
+          hospital discharge.
+        </p>
+        <a href="https://medium.com/" target="_blank" rel="noopener">
+          Read the article
+        </a>
+      </article>
+
+      <article class="card">
+        <h3>Why Do Patients Still Pay After a Cashless Approval?</h3>
+        <p>
+          Understanding deductions, exclusions, limits and non-payable
+          expenses can help explain why a cashless claim may still involve
+          patient payment.
+        </p>
+        <a href="https://medium.com/" target="_blank" rel="noopener">
+          Read the article
+        </a>
+      </article>
+
+    </div>
+
+    <div class="note">
+      <strong>Important:</strong>
+      The articles published here are educational and analytical in nature.
+      They are not individual insurance, legal or medical advice.
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="container">
+
+    <strong>Health Insurance Behaviour Lab</strong>
+
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="claims.html">Claims</a>
+      <a href="policy.html">Policy &amp; Limits</a>
+      <a href="costs.html">Out-of-Pocket Costs</a>
+      <a href="articles.html">Articles</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <p class="small">
+      Educational content only. This website does not provide individual
+      insurance, legal or medical advice.
+    </p>
+
+  </div>
+</footer>
+
+</body>
+</html>
