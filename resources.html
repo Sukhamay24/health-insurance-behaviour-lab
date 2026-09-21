@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Health Insurance Resources | Health Insurance Behaviour Lab</title>
+
+  <meta name="description" content="Free health insurance resources, checklists and practical guides to understand claims, policy conditions, cashless treatment and out-of-pocket costs.">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #123b5d;
+      background: #ffffff;
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 0 28px;
+    }
+
+    header {
+      background: #ffffff;
+      border-bottom: 1px solid #dce7ee;
+    }
+
+    .nav {
+      min-height: 66px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
+
+    .brand {
+      font-size: 20px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    nav a {
+      font-size: 14px;
+      color: #173f60;
+    }
+
+    nav a:hover {
+      color: #0b6b9a;
+    }
+
+    .hero {
+      background: #eef8fc;
+      padding: 78px 0 70px;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      background: #dceef7;
+      color: #123b5d;
+      padding: 7px 15px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 22px;
+    }
+
+    h1 {
+      font-size: 52px;
+      line-height: 1.12;
+      margin: 0 0 22px;
+      max-width: 850px;
+    }
+
+    .hero p {
+      font-size: 19px;
+      max-width: 820px;
+      margin: 0;
+      color: #355c78;
+    }
+
+    section {
+      padding: 65px 0;
+    }
+
+    h2 {
+      font-size: 34px;
+      line-height: 1.2;
+      margin: 0 0 20px;
+    }
+
+    .intro {
+      font-size: 17px;
+      color: #45647a;
+      max-width: 850px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-top: 35px;
+    }
+
+    .card {
+      border: 1px solid #d5e2ea;
+      border-radius: 12px;
+      padding: 28px;
+      background: #ffffff;
+      box-shadow: 0 3px 12px rgba(18, 59, 93, 0.04);
+    }
+
+    .card h3 {
+      margin: 0 0 12px;
+      font-size: 21px;
+    }
+
+    .card p {
+      margin: 0;
+      color: #506b7e;
+    }
+
+    .guide {
+      background: #f5f9fb;
+    }
+
+    .guide-box {
+      max-width: 850px;
+      margin: 0 auto;
+      background: #ffffff;
+      border: 1px solid #d7e4eb;
+      border-radius: 12px;
+      padding: 32px;
+    }
+
+    .guide-box h3 {
+      margin-top: 0;
+      font-size: 24px;
+    }
+
+    ul {
+      padding-left: 22px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    .cta {
+      background: #164b6b;
+      color: #ffffff;
+      text-align: center;
+    }
+
+    .cta h2 {
+      color: #ffffff;
+    }
+
+    .cta p {
+      max-width: 760px;
+      margin: 0 auto 28px;
+      color: #e6f1f7;
+    }
+
+    .button {
+      display: inline-block;
+      background: #ffffff;
+      color: #123b5d;
+      padding: 13px 22px;
+      border-radius: 7px;
+      font-weight: 700;
+    }
+
+    footer {
+      background: #ffffff;
+      border-top: 1px solid #dce7ee;
+      padding: 35px 0;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+      margin: 15px 0;
+    }
+
+    .footer-links a {
+      font-size: 14px;
+    }
+
+    .small {
+      font-size: 13px;
+      color: #647989;
+    }
+
+    @media (max-width: 800px) {
+      .nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 18px 0;
+      }
+
+      nav {
+        justify-content: flex-start;
+        gap: 12px 16px;
+      }
+
+      h1 {
+        font-size: 40px;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .container {
+        padding: 0 20px;
+      }
+
+      h1 {
+        font-size: 34px;
+      }
+
+      h2 {
+        font-size: 29px;
+      }
+
+      .hero {
+        padding: 55px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="container nav">
+
+    <a class="brand" href="index.html">
+      Health Insurance Behaviour Lab
+    </a>
+
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="claims.html">Claims</a>
+      <a href="policy.html">Policy &amp; Limits</a>
+      <a href="costs.html">Out-of-Pocket Costs</a>
+      <a href="articles.html">Articles</a>
+      <a href="resources.html">Resources</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+  </div>
+</header>
+
+
+<main>
+
+  <section class="hero">
+    <div class="container">
+
+      <span class="eyebrow">FREE HEALTH INSURANCE RESOURCES</span>
+
+      <h1>
+        Practical Health Insurance Checklists and Guides
+      </h1>
+
+      <p>
+        Simple resources to help you understand your health insurance policy,
+        prepare for a claim and examine possible out-of-pocket costs before treatment.
+      </p>
+
+    </div>
+  </section>
+
+
+  <section>
+    <div class="container">
+
+      <h2>Free Health Insurance Resources</h2>
+
+      <p class="intro">
+        Health insurance documents can be difficult to understand.
+        These practical resources focus on the areas that can matter
+        when a claim is actually processed.
+      </p>
+
+
+      <div class="cards">
+
+        <div class="card">
+          <h3>Claim Checklist</h3>
+
+          <p>
+            Key points to examine before and during a health insurance claim,
+            including documents, hospital bills and claim communication.
+          </p>
+        </div>
+
+
+        <div class="card">
+          <h3>Policy Review Checklist</h3>
+
+          <p>
+            Important policy features to review carefully, including
+            room-rent limits, sub-limits, co-payments, deductibles,
+            waiting periods and exclusions.
+          </p>
+        </div>
+
+
+        <div class="card">
+          <h3>Cashless Claim Checklist</h3>
+
+          <p>
+            Practical points to understand before hospital admission,
+            cashless approval and final settlement.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="guide">
+    <div class="container">
+
+      <div class="guide-box">
+
+        <h2>What to Check Before a Claim</h2>
+
+        <p class="intro">
+          A cashless facility does not necessarily mean that every hospital
+          charge will be paid by the insurer. Reviewing the policy beforehand
+          can help you understand the possible payment gap.
+        </p>
+
+        <ul>
+          <li>Check the sum insured and applicable policy limits.</li>
+          <li>Review room-rent and ICU restrictions.</li>
+          <li>Look for disease-specific or treatment-specific sub-limits.</li>
+          <li>Understand co-payment and deductible provisions.</li>
+          <li>Review exclusions and waiting periods.</li>
+          <li>Understand how non-payable hospital expenses may affect the final bill.</li>
+          <li>Keep important policy and medical documents accessible.</li>
+        </ul>
+
+      </div>
+
+
+      <div class="guide-box" style="margin-top: 25px;">
+
+        <h2>Understanding Cashless Claims</h2>
+
+        <p class="intro">
+          Cashless treatment generally involves communication between the
+          hospital and insurer or claims administrator. Approval of a claim
+          does not automatically mean that the entire hospital bill will be paid.
+        </p>
+
+        <ul>
+          <li>Cashless approval may be subject to policy terms.</li>
+          <li>The approved amount may differ from the hospital's final bill.</li>
+          <li>Non-covered expenses may remain payable by the policyholder.</li>
+          <li>Policy limits can affect the amount finally payable.</li>
+        </ul>
+
+      </div>
+
+
+      <div class="guide-box" style="margin-top: 25px;">
+
+        <h2>Understanding Out-of-Pocket Costs</h2>
+
+        <p class="intro">
+          The amount paid by the policyholder can depend on several factors,
+          not simply on the total amount of the hospital bill.
+        </p>
+
+        <ul>
+          <li>Policy exclusions</li>
+          <li>Room-rent restrictions</li>
+          <li>Sub-limits</li>
+          <li>Co-payment</li>
+          <li>Deductibles</li>
+          <li>Non-payable or excluded expenses</li>
+          <li>Charges above applicable policy limits</li>
+        </ul>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="cta">
+    <div class="container">
+
+      <h2>Understand Your Health Insurance Before You Need It</h2>
+
+      <p>
+        Health insurance is not only about the amount of coverage.
+        It is also about understanding the conditions behind that coverage.
+      </p>
+
+      <a class="button" href="articles.html">
+        Explore the Articles
+      </a>
+
+    </div>
+  </section>
+
+</main>
+
+
+<footer>
+  <div class="container">
+
+    <strong>Health Insurance Behaviour Lab</strong>
+
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="claims.html">Claims</a>
+      <a href="policy.html">Policy &amp; Limits</a>
+      <a href="costs.html">Out-of-Pocket Costs</a>
+      <a href="articles.html">Articles</a>
+      <a href="resources.html">Resources</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <p class="small">
+      Educational content only. This website does not provide individual
+      insurance, legal or medical advice.
+    </p>
+
+  </div>
+</footer>
+
+</body>
+</html>
