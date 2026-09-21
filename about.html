@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About | Health Insurance Behaviour Lab</title>
+<meta name="description" content="About Health Insurance Behaviour Lab — practical, educational analysis of health insurance claims, policy design, limits and out-of-pocket costs.">
+<style>
+:root{
+  --navy:#123f5d;
+  --navy2:#0d3047;
+  --ink:#17324a;
+  --muted:#5c6d79;
+  --light:#f4f8fa;
+  --line:#dbe5eb;
+  --white:#fff;
+  --accent:#eaf3f8;
+  --max:1080px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:Arial,Helvetica,sans-serif;
+  color:var(--ink);
+  background:#fff;
+  line-height:1.65;
+}
+a{color:inherit}
+.container{width:min(var(--max),92%);margin:auto}
+header{
+  position:sticky;
+  top:0;
+  z-index:10;
+  background:rgba(255,255,255,.97);
+  border-bottom:1px solid var(--line);
+}
+.nav{
+  min-height:68px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:24px;
+}
+.brand{
+  font-weight:700;
+  font-size:18px;
+  color:var(--navy);
+  text-decoration:none;
+  white-space:nowrap;
+}
+nav{display:flex;flex-wrap:wrap;gap:18px;justify-content:flex-end}
+nav a{
+  text-decoration:none;
+  color:#385266;
+  font-size:14px;
+}
+nav a:hover{color:var(--navy);text-decoration:underline}
+
+.hero{
+  background:linear-gradient(135deg,#edf6fa,#f8fbfc);
+  padding:86px 0 78px;
+}
+.hero-grid{
+  display:grid;
+  grid-template-columns:1.3fr .7fr;
+  gap:54px;
+  align-items:center;
+}
+.eyebrow{
+  display:inline-block;
+  padding:7px 12px;
+  border-radius:999px;
+  background:#dcecf4;
+  color:var(--navy);
+  font-size:12px;
+  font-weight:700;
+  letter-spacing:.3px;
+}
+h1{
+  font-size:clamp(38px,5vw,62px);
+  line-height:1.08;
+  margin:18px 0 20px;
+  color:var(--navy2);
+}
+.lead{font-size:18px;color:#425d70;max-width:700px}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin:28px 0 18px}
+.btn{
+  display:inline-block;
+  padding:13px 18px;
+  border-radius:7px;
+  text-decoration:none;
+  font-weight:700;
+  font-size:14px;
+}
+.btn-primary{background:var(--navy);color:#fff}
+.btn-secondary{background:#fff;border:1px solid #b8cad5;color:var(--navy)}
+.disclaimer{font-size:12px;color:#637681;max-width:720px}
+.hero-note{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:28px;
+  box-shadow:0 8px 28px rgba(18,63,93,.08);
+}
+.hero-note h3{margin-top:0;color:var(--navy)}
+.hero-note ul{padding-left:20px;margin-bottom:0}
+
+section{padding:72px 0}
+.section-alt{background:var(--light)}
+.section-head{max-width:760px;margin-bottom:30px}
+h2{font-size:32px;line-height:1.2;margin:0 0 14px;color:var(--navy)}
+h3{line-height:1.3}
+.section-head p{color:var(--muted)}
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+.card{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:12px;
+  padding:25px;
+}
+.card h3{font-size:19px;color:var(--navy);margin-top:0}
+.card p{color:var(--muted);font-size:14px;margin-bottom:0}
+
+.callout{
+  background:#fff;
+  border-left:5px solid var(--navy);
+  border-radius:8px;
+  padding:28px 30px;
+  box-shadow:0 4px 18px rgba(0,0,0,.04);
+}
+.callout h2{font-size:28px}
+
+.list-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:12px 40px;
+}
+.list-grid li{margin-bottom:9px;color:#425b6c}
+
+.article-list{display:grid;gap:0}
+.article{
+  padding:20px 0;
+  border-bottom:1px solid var(--line);
+}
+.article:last-child{border-bottom:0}
+.article h3{margin:0 0 7px;color:var(--navy);font-size:18px}
+.article p{margin:0;color:var(--muted);font-size:14px}
+
+.resources .card{min-height:170px}
+
+.final-cta{
+  background:var(--navy);
+  color:#fff;
+  text-align:center;
+}
+.final-cta h2{color:#fff}
+.final-cta p{max-width:700px;margin:0 auto 22px;color:#e4eef3}
+
+footer{
+  background:#102b3b;
+  color:#dce7ed;
+  padding:34px 0;
+}
+.footer-grid{
+  display:flex;
+  justify-content:space-between;
+  gap:30px;
+  flex-wrap:wrap;
+}
+footer strong{color:#fff}
+footer p,footer a{font-size:12px;color:#bdcbd3}
+.footer-links{display:flex;gap:16px;flex-wrap:wrap}
+.footer-links a{text-decoration:none}
+.footer-links a:hover{text-decoration:underline}
+.copyright{
+  border-top:1px solid rgba(255,255,255,.15);
+  margin-top:22px;
+  padding-top:18px;
+}
+
+@media(max-width:800px){
+  .nav{align-items:flex-start;padding:14px 0;flex-direction:column;gap:10px}
+  nav{justify-content:flex-start;gap:12px}
+  .hero{padding:58px 0}
+  .hero-grid{grid-template-columns:1fr;gap:28px}
+  .cards{grid-template-columns:1fr}
+  .list-grid{grid-template-columns:1fr}
+  section{padding:54px 0}
+}
+@media(max-width:520px){
+  h1{font-size:38px}
+  h2{font-size:28px}
+  .lead{font-size:16px}
+  .actions{flex-direction:column;align-items:stretch}
+  .btn{text-align:center}
+}
+</style></head>
+<body>
+<header><div class="container nav-wrap"><a class="brand" href="index.html">Health Insurance Behaviour Lab</a><nav>
+<a href="claims.html">Claims</a><a href="policy.html">Policy &amp; Limits</a><a href="costs.html">Out-of-Pocket Costs</a><a href="index.html#articles">Articles</a><a href="index.html#resources">Resources</a><a href="about.html">About</a>
+</nav></div></header>
+<main>
+<section class="hero"><div class="container"><p class="eyebrow">ABOUT THE LAB</p><h1>Understanding Health Insurance Beyond the Policy Brochure.</h1><p class="lead">Health Insurance Behaviour Lab is an educational platform focused on how health insurance actually works at the time of a claim.</p></div></section>
+<section><div class="container"><div class="grid">
+<div class="card"><h2>What This Lab Does</h2><p>This website explains practical health insurance issues in simple language — especially the areas that can affect what a policyholder finally pays during hospitalisation.</p><p>The focus is on claims, cashless treatment, policy limits, exclusions, room-rent restrictions, package pricing and out-of-pocket costs.</p></div>
+<div class="card"><h2>Why This Matters</h2><p>A policy may show a large sum insured, yet the amount payable for a particular hospital bill can depend on many policy terms and claim-level factors.</p><p>The purpose of this Lab is to make those mechanisms easier to understand before and during a claim.</p></div>
+</div></div></section>
+<section><div class="container"><h2>Practical Experience Behind the Analysis</h2><p class="lead">The analysis on this website is informed by more than 25 years of practical experience in health insurance.</p><div class="grid">
+<div class="card"><h3>Claims Behaviour</h3><p>How claim approval, deductions, non-payable items and hospital billing can interact.</p></div>
+<div class="card"><h3>Policy Design</h3><p>How limits, sub-limits, exclusions, room-rent conditions and other policy structures can affect claims.</p></div>
+<div class="card"><h3>Consumer Understanding</h3><p>Clear explanations designed to help readers ask better questions and understand their policy documents.</p></div>
+</div></div></section>
+<section><div class="container"><div class="card"><h2>What This Website Is Not</h2><p>This is an educational and analytical website. It does not sell insurance policies, provide individual insurance recommendations, or guarantee claim outcomes.</p><p>Policy terms and claim decisions can vary by insurer, policy wording, hospital billing and the facts of an individual case.</p></div></div></section>
+<section><div class="container"><div class="cta"><h2>Explore the Lab</h2><p>Start with practical information about claims, policy limits and out-of-pocket costs.</p><div class="buttons"><a class="button" href="claims.html">Explore Claims</a><a class="button secondary" href="index.html">Back to Home</a></div></div></div></section>
+</main>
+<footer><div class="container"><p>© 2026 Health Insurance Behaviour Lab</p><p>Educational content only. This website does not provide individual insurance, legal or medical advice.</p></div></footer>
+</body></html>
