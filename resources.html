@@ -182,21 +182,27 @@
       color: #e6f1f7;
     }
 
-    .button {
-      display: inline-block;
-     background: #102b3b;
-      color: #123b5d;
-      padding: 13px 22px;
-      border-radius: 7px;
-      font-weight: 700;
-    }
+   .button {
+  display: inline-block;
+  background: #102b3b;
+  color: #123b5d;
+  padding: 13px 22px;
+  border-radius: 7px;
+  font-weight: 700;
+}
 
-    footer {
+footer {
   background: #102b3b;
   color: #dce7ed;
   padding: 34px 0;
 }
 
+.footer-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
     .footer-links {
       display: flex;
       gap: 18px;
@@ -445,7 +451,7 @@ footer strong {
 
 
 <footer>
-  <div class="container" style="display:flex; justify-content:space-between; align-items:center; gap:50px; flex-wrap:wrap;">
+ <div class="container footer-grid">
 
     <div style="flex:1; min-width:300px;">
       <strong>Health Insurance Behaviour Lab</strong>
