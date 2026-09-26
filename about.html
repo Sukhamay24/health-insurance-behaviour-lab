@@ -32,11 +32,13 @@ header{
   background:rgba(255,255,255,.97);
   border-bottom:1px solid var(--line);
 }
-.nav-wrap{
-  min-height:68px;
+header .nav-wrap{
+  max-width:1100px;
+  margin:auto;
+  padding:18px 20px;
   display:flex;
-  align-items:center;
   justify-content:space-between;
+  align-items:center;
   gap:20px;
   white-space:nowrap;
 }
@@ -47,13 +49,20 @@ header{
   text-decoration:none;
   white-space:nowrap;
 }
-nav{display:flex;flex-wrap:nowrap;gap:12px;justify-content:flex-end}
-nav a{
+header nav{
+  display:flex;
+  flex-wrap:nowrap;
+  gap:0;
+}
+header nav a{
+  color:#173b57;
   text-decoration:none;
-  color:#385266;
+  margin-left:12px;
   font-size:14px;
 }
-nav a:hover{color:var(--navy);text-decoration:underline}
+header nav a:hover{
+  color:var(--navy);
+}
 
 .hero{
   background:linear-gradient(135deg,#edf6fa,#f8fbfc);
