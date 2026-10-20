@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sukhamay24.github.io/health-insurance-behaviour-lab/sitemap.xml
