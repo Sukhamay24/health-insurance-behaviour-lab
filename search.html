@@ -30,5 +30,8 @@ if(sort.value==='az')found.sort((a,b)=>a.title.localeCompare(b.title));else foun
 let total=found.length,cap=Number(limit.value),shown=found.slice(0,cap);status.textContent=total+' result'+(total===1?'':'s')+(total>cap?' · showing '+cap:'');
 if(!shown.length){results.innerHTML='<div class="empty">'+(terms.length||selected?'No matching result found. Try another keyword or choose All Topics.':'Enter a keyword or choose a topic to start searching.')+'</div>';return;}
 results.innerHTML=shown.map(x=>'<article class="result"><div class="meta">'+(x.type==='article'?'Published Article':'Website Page')+'</div><h3><a href="'+esc(x.url)+'" target="'+(x.type==='article'?'_blank':'_self')+'" rel="noopener">'+esc(x.title)+'</a></h3><p>'+esc(x.description)+'</p><a href="'+esc(x.url)+'" target="'+(x.type==='article'?'_blank':'_self')+'" rel="noopener">'+(x.type==='article'?'Open original article':'Open page')+' →</a><div class="tags">'+(x.categories||[]).slice(0,4).map(t=>'<span class="tag">'+esc(t)+'</span>').join('')+'</div></article>').join('');}
-form.addEventListener('submit',e=>{e.preventDefault();render();});[q,topic,kind,sort,limit].forEach(el=>el.addEventListener('input',render));render();})();
+form.addEventListener('submit',e=>{e.preventDefault();render();});[q,topic,kind,sort,limit].forEach(el=>el.addEventListener('input',render));
+const initialQuery = new URLSearchParams(window.location.search).get('q');
+if(initialQuery){q.value=initialQuery;}
+render();})();
 </script></body></html>

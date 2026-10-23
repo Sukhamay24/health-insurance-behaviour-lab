@@ -211,6 +211,24 @@ footer p,footer a{font-size:12px;color:#bdcbd3}
   .actions{flex-direction:column;align-items:stretch}
   .btn{text-align:center}
 }
+
+/* Homepage search panel */
+.home-search{background:linear-gradient(125deg,#123f5d 0%,#176b70 58%,#3b7b72 100%);padding:34px 0;color:#fff}
+.home-search .search-card{max-width:980px;margin:0 auto;padding:0 22px}
+.home-search .search-inner{background:#fff;color:#17324a;border-radius:18px;padding:25px;box-shadow:0 14px 35px rgba(9,35,52,.18)}
+.home-search .search-kicker{display:inline-block;background:#f5e7a7;color:#3b4b42;border-radius:20px;padding:5px 12px;font-size:12px;font-weight:700;letter-spacing:.4px}
+.home-search h2{font-size:clamp(25px,3vw,34px);line-height:1.2;margin:12px 0 7px;color:#123f5d}
+.home-search p{margin:0 0 17px;color:#526675}
+.home-search form{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px}
+.home-search input{min-width:0;width:100%;padding:14px 15px;border:1px solid #c5d5dc;border-radius:9px;font:inherit;color:#17324a}
+.home-search button{border:0;border-radius:9px;padding:13px 23px;background:#176b70;color:#fff;font:inherit;font-weight:700;cursor:pointer}
+.home-search button:hover{background:#10585c}
+.home-search .search-topics{display:flex;flex-wrap:wrap;gap:8px;margin-top:15px}
+.home-search .search-topics a{display:inline-block;text-decoration:none;padding:6px 11px;border-radius:18px;background:#e9f4f1;color:#155d5b;font-size:13px;font-weight:600}
+.home-search .search-topics a:nth-child(3n+2){background:#f8f0cf;color:#6d5a16}
+.home-search .search-topics a:nth-child(3n){background:#eee8fa;color:#55417c}
+@media(max-width:600px){.home-search{padding:24px 0}.home-search .search-inner{padding:18px}.home-search form{grid-template-columns:1fr}.home-search button{width:100%}}
+
 </style>
 </head>
 <body>
@@ -234,6 +252,30 @@ footer p,footer a{font-size:12px;color:#bdcbd3}
 </header>
 
 <main id="top">
+
+
+<section class="home-search" aria-label="Search Health Insurance Behaviour Lab">
+  <div class="search-card">
+    <div class="search-inner">
+      <span class="search-kicker">FIND WHAT YOU NEED</span>
+      <h2>Search Health Insurance Topics</h2>
+      <p>Find practical explanations of claims, cashless treatment, policy limits and out-of-pocket costs.</p>
+      <form action="search.html" method="get" role="search">
+        <input type="search" name="q" aria-label="Search health insurance topics" placeholder="Try Cashless, Waiting Period, Room Rent..." autocomplete="off">
+        <button type="submit">Search Topics</button>
+      </form>
+      <div class="search-topics" aria-label="Popular search topics">
+        <a href="search.html?q=Cashless">Cashless Claims</a>
+        <a href="search.html?q=Waiting%20Period">Waiting Period</a>
+        <a href="search.html?q=Exclusions">Exclusions</a>
+        <a href="search.html?q=Room%20Rent">Room Rent</a>
+        <a href="search.html?q=Out-of-Pocket%20Costs">Out-of-Pocket Costs</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
 <section class="hero">
   <div class="container hero-grid">
