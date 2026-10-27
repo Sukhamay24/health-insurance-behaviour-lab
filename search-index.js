@@ -663,6 +663,31 @@ window.HIBL_SEARCH_INDEX = {
         "sub",
         "limit"
       ]
+    },
+    {
+      "title": "A Good Insurance Advisor Must Be Willing to Lose a Sale",
+      "description": "Why understanding a customer's needs should matter more than closing a health insurance sale quickly.",
+      "url": "https://medium.com/@singharoysukhamay/a-good-insurance-advisor-must-be-willing-to-lose-a-sale-f7c15991236a",
+      "categories": [
+        "Buying Health Insurance",
+        "Resources"
+      ],
+      "keywords": [
+        "insurance advisor",
+        "advisor",
+        "adviser",
+        "lose a sale",
+        "responsible advice",
+        "customer needs",
+        "suitability",
+        "informed decision",
+        "insurance sales",
+        "health insurance",
+        "policy limitations",
+        "trust",
+        "premium",
+        "customer understanding"
+      ]
     }
   ]
 };
